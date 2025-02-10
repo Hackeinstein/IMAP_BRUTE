@@ -13,7 +13,7 @@ def authenticate_spectrum_smtp(username, password):
             hostname = 'mail.brighthouse.com'
             mail_domain = username.split("@")[1]
             if mail_domain == "spectrum.net" or mail_domain == "charter.net" or mail_domain == "bresnan.com":
-                hostname = 'mail.spectrum.net'
+                hostname = 'mobile.charter.net'
             elif mail_domain == "brighthouse.com" or mail_domain == "bak.rr.com" or mail_domain == "bham.rr.com" or mail_domain == "cfl.rr.com" or mail_domain == "emore.rr.com" or mail_domain == "eufala.rr.com" or mail_domain == "indy.rr.com" or mail_domain == "mi.rr.com" or mail_domain == "panhandle.rr.com" or mail_domain == "tampabay.rr.com":
                 hostname = 'mail.brighthouse.com'
             elif "rr.com" in mail_domain:
